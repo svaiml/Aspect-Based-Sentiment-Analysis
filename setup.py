@@ -14,7 +14,7 @@ description = 'Aspect Based Sentiment Analysis: ' \
 setup(
     name='aspect-based-sentiment-analysis',
     version=absa.__version__,  # Semantic: MAJOR, MINOR, and PATCH
-    url='https://github.com/ScalaConsultants/Aspect-Based-Sentiment-Analysis',
+    url='https://github.com/svaiml/Aspect-Based-Sentiment-Analysis',
     description=description,
     long_description=README,
     long_description_content_type="text/markdown",
@@ -24,8 +24,8 @@ setup(
     include_package_data=False,
     packages=find_packages(),
     install_requires=[
-        'tensorflow==2.5',
-        'transformers==4.8',
+        'tensorflow>=2.5',
+        'transformers>=4.8',
         'pytest',
         'scikit-learn',
         'ipython',
@@ -34,5 +34,5 @@ setup(
         'optuna',
         'spacy'
     ],
-    python_requires='==3.7.*',
+    python_requires='>=3.7.*',
 )
